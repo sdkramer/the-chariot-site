@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Noto+Sans+Mono:wght@100;200;300;400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&family=Text+Me+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --main-color: #d7cec7;
+  --title-color: #76323f;
+  --text-color: #565656;
+  --secondary-color: #c09f80;
+
+  --main-font: 'Noto Sans Mono';
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: var(--main-color);
+  font-family: var(--main-font);
+}
+
+
+
+h2 {
+  font-size: 2.5rem;
+  color: var(--title-color);
+}
+
+.logo img {
+  height: 10rem;
+}
+
+.links a {
+  /* display: none; */
+  text-decoration: none;
+  color: var(--title-color);
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
