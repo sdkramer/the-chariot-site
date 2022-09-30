@@ -9,9 +9,9 @@
 /*global*/
 :root{
   --main-color: #d7cec7;
-  --title-color: #76323f;
-  --text-color: #565656;
-  --secondary-color: #c09f80;
+  --title-color: #484D6D;
+  --text-color: #2C365E;
+  --secondary-color: #C5979D;
 
   --main-font: 'Noto Sans Mono';
 }
@@ -37,6 +37,7 @@ h2 {
 h3 {
   font-size: 1.25rem;
   line-height: 125%;
+  color: var(--text-color);
 }
 
 section {
@@ -51,6 +52,11 @@ section {
 nav {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+}
+
+nav svg {
+  cursor: pointer;
 }
 
 .logo {
@@ -77,17 +83,33 @@ nav {
 }
 
 /*title area*/
+.hero {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
 .title {
   margin-top: 20vh;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.485);
+  text-align: center;
 }
 
 /*buttons*/
+.ctas {
+  margin-top: 4rem;
+}
 .ctas button {
   padding: 0.5rem;
+  margin: 1rem;
   font-size: 1rem;
   border: none;
   border-radius: 0.2rem;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.349);
 }
 
 .cta-main {
