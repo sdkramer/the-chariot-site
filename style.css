@@ -6,6 +6,7 @@
   box-sizing: border-box;
 }
 
+/*global*/
 :root{
   --main-color: #d7cec7;
   --title-color: #76323f;
@@ -22,7 +23,7 @@ body {
 
 body {
   background-color: var(--main-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font), sans-serif;
 }
 
 
@@ -33,12 +34,40 @@ h2 {
   padding: 1rem 0rem;
 }
 
+h3 {
+  font-size: 1.25rem;
+  line-height: 125%;
+}
+
+section {
+  padding: 5%;
+}
+
+.front-page {
+  min-height: 100vh;
+}
+
+/*nav area*/
+nav {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo h1 {
+  margin-left: 1rem;
+}
+
 .logo img {
-  height: 10rem;
+  height: 7rem;
 }
 
 .links a {
-  /* display: none; */
+  display: none;
   text-decoration: none;
   color: var(--title-color);
 }
