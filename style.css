@@ -19,10 +19,11 @@
 html,
 body {
   height: 100%;
+  width: 100%;
 }
 
 body {
-  background-color: var(--main-color);
+  
   font-family: var(--main-font), sans-serif;
 }
 
@@ -109,15 +110,41 @@ nav svg {
   font-size: 1rem;
   border: none;
   border-radius: 0.2rem;
-  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.349);
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.678);
 }
 
 .cta-main {
-  background-color: var(--secondary-color);
+  background-color: var(--title-color);
+  opacity: 0.5;
   color: white;
 }
 
 .cta-audio {
-  background-color: var(--title-color);
+  background-color: var(--text-color);
+  opacity: 0.5;
   color: white;
+}
+
+/*Foundations page*/
+.foundations {
+  color: var(--text-color);
+  text-align: center;
+}
+
+video {
+  width: 100%;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+
+.quiet {
+  position: relative;
+}
+
+.quiet h3 { 
+  position: absolute;
+  color: white;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%);
 }
